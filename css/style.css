@@ -18,6 +18,10 @@ div{
 }
 .photo{
     position: absolute;
+    background-image: url(../img/chika1.png);
+}
+.gif{
+    background-image: url(../img/chikagif.gif);
 }
 p{
     margin: 5% 20%;
