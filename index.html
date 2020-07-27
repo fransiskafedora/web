@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chika</title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="module" >
+            <!-- <img class="photo" alt="Fransiska Fedora" src="img/chika1.png">  -->
+            <div class="photo"  id="module" style="background-image: url(../img/chika1.png);"> </div>
+            <!-- <img class="gif" alt="FransiskaFedora" src="img/chikagif.gif"> -->
+            <div class="gif" style="background-image: url(../img/chikagif.gif);"></div>
+        </div>
+        <p>I am a hard working driven individual that specialised 
+            in media production, social media marketing, graphic 
+            designing, and sales managing. I have a quick to adapt 
+            personality and always eager to learn something new. 
+            I experienced living, studying and working in international 
+            environment</p>
+
+        <script>
+            const el = document.getElementById("module");
+                const windowWidth = window.innerWidth / 5;
+                const windowHeight = window.innerHeight / 5 ;
+            el.addEventListener("mousemove", (e) => {
+                const mouseX = e.clientX / windowWidth;
+                const mouseY = e.clientY / windowHeight;
+            
+                el.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+            });
+        </script>
+    </body>
+</html>
